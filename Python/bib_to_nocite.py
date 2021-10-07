@@ -1,6 +1,6 @@
 import re
 
-with open("D:\\Just for Fun\\Python\\ref.bib") as f:
+with open("D:\\Just for Fun\\Python\\refs.bib", encoding="utf8") as f:
     lines = f.readlines()
 
 entries = []
@@ -19,7 +19,7 @@ print("\\nocite{" + nocite + "}")
 # Code with input for the user
 bibfile = input("Select your .bib file")
 
-with open(bibfile) as f:
+with open(bibfile, encoding="utf8") as f:
     lines = f.readlines()
 
 entries = []
