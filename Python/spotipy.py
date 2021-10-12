@@ -8,8 +8,8 @@ import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 
 # OS definitions
-os.environ['SPOTIPY_CLIENT_ID'] = "bd8d58774702476ab5bd6ad6fa53e394"
-os.environ['SPOTIPY_CLIENT_SECRET'] = "7bf56064c04f43a78533973cdce7cd02"
+os.environ['SPOTIPY_CLIENT_ID'] = "xxxx"
+os.environ['SPOTIPY_CLIENT_SECRET'] = "xxxx"
 
 kayne_uri = "spotify:artist:5K4W6rqBFWDnAN6FQUkS6x"
 

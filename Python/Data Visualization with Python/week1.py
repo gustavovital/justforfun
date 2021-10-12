@@ -3,7 +3,7 @@ from matplotlib.figure import Figure # import figure artist
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-from __future__ import print_function
+# from __future__ import print_function
 
 # example one
 fig = Figure()
@@ -42,5 +42,5 @@ df_can = pd.read_excel(
     skipfooter=2
 )
 
-df_can.head()
-df_can.reindex("OdName")
+# df_can.head()
+
