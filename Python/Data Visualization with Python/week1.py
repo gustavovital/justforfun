@@ -43,3 +43,4 @@ df_can = pd.read_excel(
 )
 
 df_can.head()
+df_can.reindex("OdName")
