@@ -1,6 +1,7 @@
 from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas # FigureCanvas
 from matplotlib.figure import Figure # import figure artist
 import matplotlib.pyplot as plt
+import matplotlib as mpl
 import numpy as np
 import pandas as pd
 # from __future__ import print_function
@@ -51,3 +52,14 @@ df_can.rename(columns={'OdName': 'Country',
 
 df_can['Total'] = df_can.sum(axis=1)
 df_can.set_index('Country', inplace=True)
+
+# Line plot
+
+years = list(map(int, range(1980, 2014)))
+
+df_can.loc["Haiti", years].plot(kind='line')
+plt.title('Immigration from Haiti')
+plt.ylabel('Numbers of immigrants')
+plt.xlabel("Years")
+
+plt.show()
