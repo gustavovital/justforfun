@@ -30,6 +30,7 @@ ax1.set_xlabel("Eixo X")
 ax1.set_title("Título")
 
 ax2.plot(y, x)
+plt.show()
 
 # instancias a partir de subplots
 fig, ax = plt.subplots()
@@ -39,6 +40,10 @@ ax.plot(x, x**4, 'g--')
 ax.set_xlabel("Eixo X")
 ax.set_ylabel("Eixo Y")
 ax.set_title("Título")
+
+plt.show()
+
+#
 
 fig2, ax = plt.subplots(1, 2)
 
@@ -76,3 +81,5 @@ axes.plot(x, y, 'r--', label='x^2')
 axes.plot(y, x, 'g--', label='x^1/2')
 axes.legend()
 axes.set_title("Título")
+
+plt.show()
