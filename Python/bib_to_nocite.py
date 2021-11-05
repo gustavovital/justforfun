@@ -31,7 +31,7 @@ entries = []
 for entry, name in enumerate(lines):
     if "@" in name:
         entries.append(name)
-
+    
 for name in range(len(entries)):
 
     entries[name] = re.sub(r'^.*?{', '', entries[name])
