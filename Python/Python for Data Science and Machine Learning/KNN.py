@@ -10,4 +10,4 @@ df = pd.read_csv("Python\\Python for Data Science and Machine Learning\\Classifi
 # print(df.head(3))
 # print(df.columns)
 
-scaler = StandardScaler()
+scaler = StandardScaler()  # define the standart form z = (x-u)/s
