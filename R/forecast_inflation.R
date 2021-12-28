@@ -54,6 +54,9 @@ u_gap <- window(u_gap, start=c(2003,01), end=c(2021,10))
 data <- ts(data.frame(m1, m2, m3, ipc, ipca, cambio, r_lp, i_cp, gap, u_gap),
            start = c(2012, 01), frequency = 12)
 
+saveRDS(data, 'data.rds')
+
+
 # Estimating VAR ----
 # detach("package:BETS", unload = TRUE)
 VAR(data, p=2)
